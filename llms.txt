@@ -1,0 +1,25 @@
+# Pricewise Grocery
+
+> Pricewise is a free iPhone app for shoppers in the Greater Toronto Area (GTA). It checks your grocery list for price-match deals from this week's flyers and directs you to the nearest store that will honour them — so you save on the groceries you already buy.
+
+## Key facts
+- Platform: iPhone (iOS). Free to download.
+- Area served: Greater Toronto Area, Ontario, Canada.
+- Languages: 11.
+- What it does: reads weekly grocery flyers, flags price-match opportunities on items already on your list, and gives directions to the nearest participating store.
+- What it is NOT: it is not a "cheapest store" finder. It matches your existing cart and routes you to the nearest store that will match — it does not rank every store in the city.
+- Core features: price-match finder, nearest-store directions, savings tracker, shared shopping lists, 11 languages.
+
+## Price matching in the Greater Toronto Area
+- Stores such as No Frills, FreshCo and Giant Tiger have price-match policies, each with its own rules.
+- Walmart Canada ended its Ad Match program in 2020.
+- Metro and Food Basics do not price-match, but their flyers can be used as proof of a lower price at stores that do.
+- Price-matching is never guaranteed; each store makes the final decision.
+
+## Links
+- Website: https://jaymehta1892-prog.github.io/pricewise-site/
+- Download (App Store): https://apps.apple.com/ca/app/id6770648419
+- Instagram: https://instagram.com/pricewisegrocery
+
+## Disclaimer
+Pricewise Grocery is independent and not affiliated with, endorsed by, or sponsored by any grocery retailer or flyer. Store names are used for identification only. Savings reflect personal experience, not a guaranteed outcome.
