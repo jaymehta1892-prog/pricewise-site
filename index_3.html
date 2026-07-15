@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ============================ SEO ============================ -->
+<title>Pricewise: Grocery Price Match App for Toronto &amp; the GTA</title>
+<meta name="description" content="Pricewise finds price-match deals on your grocery list and points you to the nearest store in the GTA. Save on groceries — free, on iPhone, in 11 languages." />
+<meta name="keywords" content="grocery price match app, price matching Toronto, price matching GTA, save money on groceries, grocery flyer app, grocery deals Toronto, flyer price matching Canada, No Frills price match, FreshCo price match, Giant Tiger price match, grocery savings app, weekly flyer deals, shopping list app, cheapest groceries GTA" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="author" content="Pricewise Grocery" />
+<meta name="theme-color" content="#0C2819" />
+<meta name="geo.region" content="CA-ON" />
+<meta name="geo.placename" content="Toronto, Ontario, Canada" />
+<meta name="ICBM" content="43.6532, -79.3832" />
+<!-- Safari iOS Smart App Banner: links the site to the app + drives installs -->
+<meta name="apple-itunes-app" content="app-id=6770648419" />
+<meta name="apple-mobile-web-app-title" content="Pricewise" />
+<!-- EDIT: set these to your final live domain if not GitHub Pages -->
+<link rel="canonical" href="https://jaymehta1892-prog.github.io/pricewise-site/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Pricewise Grocery" />
+<meta property="og:title" content="Pricewise: Grocery Price Match App for Toronto & the GTA" />
+<meta property="og:description" content="Find price-match deals on your grocery list and get directed to the nearest store in the GTA. Free, on iPhone, in 11 languages." />
+<meta property="og:url" content="https://jaymehta1892-prog.github.io/pricewise-site/" />
+<!-- EDIT: add a real 1200x630 share image at this path -->
+<meta property="og:image" content="https://jaymehta1892-prog.github.io/pricewise-site/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_CA" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Pricewise: Grocery Price Match App for the GTA" />
+<meta name="twitter:description" content="Find price-match deals on your grocery list and get directed to the nearest store. Free, on iPhone, in 11 languages." />
+<meta name="twitter:image" content="https://jaymehta1892-prog.github.io/pricewise-site/assets/og-image.png" />
+
+<link rel="icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8SFBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBz/wAARCABAAEADASIAAhEBAxEB/8QAHAAAAgIDAQEAAAAAAAAAAAAAAAYDBwQFCAIJ/8QAMxAAAgIBBAECBAMGBwAAAAAAAQIDBAUABhESBxMhIjFBURRhgQgVIzJCkjNTYnKCg5H/xAAaAQACAwEBAAAAAAAAAAAAAAAAAgEDBQQG/8QAJREAAgICAAUEAwAAAAAAAAAAAAECEQMxEhMhQVEEBZGhYXHB/9oADAMBAAIRAxEAPwDjvXpByw0BCfpqaOPVRktkrV/Xj5X/ABAP/dYWtxAvBGsBqsss8ixRs3xHgAe+htLYqfkxtGpJIJYW6ujK32I99R6E09D7DRo0aAM2uyT/AAngSfb76y1gIPy1p9OHjHbj7139t3bzyusOSuxV5CCfZGYBj/bzqG6ViuPgs3aHiaOns+vvHcdczpkZ4quFw/qGI35JHKrLM490gHVj8PDP1PBA9z1zisRkvClnB1LEO3L2Gy0q0e2Nxq496VyQEQclWYyQyOPT7P8AEGZSSeTpV8z5DGR+OU/Bo7bhnycd/B42tVkmLQU3EaoVQHrGEYjk8Dlvz0o099QVtjXVnORq5bJ3aMWVuvFZOZvVxKPXdCY+sKKp6xoh5VQzDgn34MOZ5HxPTVr5/qpl8OHG6/A3zeWK3kLaeWwef2bNhN8ehkIZmjphjjI4q/ZrfdwHCjuE4Xlix9ueRrnzf/jDI5GEY9cRt7FZevipcpHTxVN0ksPGI2lrHknmREZn/wCDaxsZa35uPdCLtvD5qjbtEVKv4aa8kdVDJyP4rueq88Elj1+Htxzq7N47ny2S2ZtHKRXFzm6NryQ33vUsfYja4EsKjWIy8a+vCYz0d05XluTwGB0mWU3KM1fR/KfT63rsV8fMVvt9nCWjTj5UgwsPkHcTbblWTATXZZKTKjIPSZuQOrAEcc9eCPppO1pRdqyA0/eE9w1tq+Vdp5e44SpUyELzOf6Y+wDH9AxP6aQdekcxurr8xokrVIP0fQDAZyaxvunirD+lm9uYHP424sZKnutiJ45B/peNkcH8z9tbOxuO7QqzWLGYtwVYFLySPbdVRR8yTz8tc/eP/KC5uKOyluhR37XxUmFjuZEha+TrMoVEkkPtHYj4UJI3wOoCsQffS1u3dW66Uv4LdlKzHeRu0aZBPTgU/R1iAEch+oYlx9RrzPuXt+TNOHLdRiqFyZaVljyeV9xZnDb/AM5QymTaxQhr1qFN7DgValgtHLdKc/FJ/Ig5/k9YH7a12Mx2b35sjF1fHSZeL9ySQzX/AF7QrJTsNAsLGK08w5V+ncooXqD788KNVnsDdS4PdseQuCa7jbSyVsrHGS7y1ZR1mP8AuAPcE/1Iurqx2RsePp7my8tb2imz7dmXIwXc9invQJbVE5MaIRz6kbxyp25HWQAe/trV9PCMMagtLoLjlxq5PpooPyznau5ZsPkJ1kXdKxSVMywAaKzLEQiWA4JBd1HD8exZO3J7arjV8ftF29qZXdNQbaGJMEOLri1exUKwVrdkqWaRYl9o/YhSvzHHv8tUPrtxStV4HT6teA0aNGrST1HI8TdkYq33GmzDeTd04KoKdLMXIqY+VcSloR/1tyg/QaUdGlcU9kV3GvK+Rtw5qH0bmQmkh/yuQqf2KAp/Ua2GS8rZjLbRx+3rUVd1pIsQtEcvJGhYxAgggNGHdA6kEoep5AHCJo1HLj4BJEk08k7dpHLH89R6NGnSrROj/9k=" />
+<link rel="apple-touch-icon" href="data:image/jpeg;base64,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" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+
+<!-- Structured data: app + FAQ + org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://jaymehta1892-prog.github.io/pricewise-site/#app",
+      "name": "Pricewise Grocery",
+      "alternateName": "Pricewise",
+      "operatingSystem": "iOS",
+      "applicationCategory": "ShoppingApplication",
+      "applicationSubCategory": "Grocery price matching",
+      "description": "Pricewise is a free iPhone app for shoppers in the Greater Toronto Area. It checks your grocery list for price-match deals from weekly flyers and directs you to the nearest participating store that will honour them.",
+      "url": "https://apps.apple.com/ca/app/id6770648419",
+      "installUrl": "https://apps.apple.com/ca/app/id6770648419",
+      "downloadUrl": "https://apps.apple.com/ca/app/id6770648419",
+      "inLanguage": [
+        "en",
+        "fr",
+        "es",
+        "zh",
+        "pa",
+        "hi",
+        "ur",
+        "ar",
+        "tl",
+        "ta",
+        "pt"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CAD"
+      },
+      "featureList": [
+        "Grocery price-match finder for your shopping list",
+        "Directions to the nearest participating store",
+        "Savings tracker",
+        "Shared shopping lists",
+        "Available in 11 languages"
+      ],
+      "keywords": "grocery price match app, flyer price matching, grocery savings, GTA, Toronto, shopping list, grocery deals",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Greater Toronto Area, Ontario, Canada"
+      },
+      "publisher": {
+        "@id": "https://jaymehta1892-prog.github.io/pricewise-site/#org"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://jaymehta1892-prog.github.io/pricewise-site/#org",
+      "logo": "https://jaymehta1892-prog.github.io/pricewise-site/assets/pricewise-icon-512.png",
+      "name": "Pricewise Grocery",
+      "url": "https://jaymehta1892-prog.github.io/pricewise-site/",
+      "description": "Independent maker of Pricewise, a free grocery price-matching app for the Greater Toronto Area.",
+      "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": "pricewisegrocery@gmail.com", "areaServed": "CA", "availableLanguage": ["en"]},
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Toronto, Ontario, Canada"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Greater Toronto Area, Ontario, Canada"
+      },
+      "knowsAbout": [
+        "grocery price matching",
+        "grocery flyers",
+        "grocery savings",
+        "Greater Toronto Area"
+      ],
+      "sameAs": [
+        "https://instagram.com/pricewisegrocery",
+        "https://apps.apple.com/ca/app/id6770648419"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jaymehta1892-prog.github.io/pricewise-site/#website",
+      "name": "Pricewise Grocery",
+      "url": "https://jaymehta1892-prog.github.io/pricewise-site/",
+      "inLanguage": "en-CA",
+      "publisher": {
+        "@id": "https://jaymehta1892-prog.github.io/pricewise-site/#org"
+      },
+      "about": "Grocery price matching app for the Greater Toronto Area"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://jaymehta1892-prog.github.io/pricewise-site/#webpage",
+      "url": "https://jaymehta1892-prog.github.io/pricewise-site/",
+      "name": "Pricewise: Grocery Price Match App for Toronto & the GTA",
+      "isPartOf": {
+        "@id": "https://jaymehta1892-prog.github.io/pricewise-site/#website"
+      },
+      "about": {
+        "@id": "https://jaymehta1892-prog.github.io/pricewise-site/#app"
+      },
+      "dateModified": "2026-07-15",
+      "inLanguage": "en-CA"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://jaymehta1892-prog.github.io/pricewise-site/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Pricewise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pricewise is a free iPhone app for shoppers in the Greater Toronto Area. It checks your grocery list for price-match deals from this week's flyers and directs you to the nearest store that will honour them, so you save on the groceries you already buy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Pricewise free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Pricewise is free to download on the App Store."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Pricewise find the single cheapest store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Pricewise looks at the list you already have, finds price-match deals on those items, and directs you to the nearest store that will honour them. It matches your cart rather than ranking every store."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which GTA grocery stores can I price-match at?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It varies by store and changes over time. Common ones in the GTA include No Frills, FreshCo and Giant Tiger. Walmart Canada ended its Ad Match program in 2020, and Metro and Food Basics do not price-match, though their flyers can be used as proof of a lower price at stores that do."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is price-matching guaranteed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Every store sets its own policy and the final decision is always theirs. Pricewise surfaces the opportunities; savings reflect personal experience, not a guaranteed outcome."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What languages does Pricewise support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eleven, so you can build your list and read your deals in the language you think in."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ink:#0C2819;          /* headings / near-black green */
+  --body:#55635C;         /* body text */
+  --forest:#1F7A47;       /* primary green */
+  --grass:#2E9E5B;
+  --mint:#7EE6A8;
+  --soft:#D8EFE1;         /* soft green fill */
+  --wash:#D9E7DF;         /* alt section band */
+  --paper:#FFFFFF;
+  --bg:#E7F0EA;           /* soft sage page canvas */
+  --line:#E7ECE9;
+  --ink-soft:#33463C;
+  --radius:16px;
+  --wrap:1160px;
+  --shadow-sm:0 1px 2px rgba(12,40,25,.05), 0 4px 16px rgba(12,40,25,.05);
+  --shadow-md:0 8px 30px rgba(12,40,25,.09);
+  --shadow-lg:0 30px 70px rgba(12,40,25,.14);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--body);background:var(--bg);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+h1,h2,h3,h4{color:var(--ink);line-height:1.08;letter-spacing:-.02em;font-weight:800}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+strong{color:var(--ink-soft);font-weight:700}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest)}
+.lead{font-size:1.2rem;color:var(--body);font-weight:500}
+section{position:relative}
+.sec{padding:clamp(72px,10vw,124px) 0}
+.sec.wash{background:var(--wash)}
+.center{text-align:center}
+.sec-head{max-width:40rem;margin:0 auto clamp(40px,5vw,64px)}
+.sec-head.center{text-align:center}
+.sec-head h2{font-size:clamp(1.9rem,3.8vw,2.75rem);margin:.7rem 0 .9rem}
+.sec-head p{font-size:1.12rem}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-weight:700;font-size:1rem;padding:.95rem 1.6rem;border-radius:12px;cursor:pointer;border:0;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .2s;white-space:nowrap;-webkit-tap-highlight-color:transparent;touch-action:manipulation;min-height:48px}
+.btn-primary{background:var(--forest);color:#fff;box-shadow:0 6px 18px rgba(31,122,71,.28)}
+.btn-primary:hover{background:#1b6b3e;transform:translateY(-2px);box-shadow:0 10px 24px rgba(31,122,71,.34)}
+.btn-primary:active{transform:translateY(0)}
+.btn-text{color:var(--ink);font-weight:700;display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 0}
+.btn-text .arw{transition:transform .25s var(--ease)}
+.btn-text:hover{color:var(--forest)}
+.btn-text:hover .arw{transform:translateX(4px)}
+
+.appstore{display:inline-flex;align-items:center;gap:.7rem;background:var(--ink);color:#fff;padding:.72rem 1.3rem;border-radius:13px;transition:transform .25s var(--ease),box-shadow .25s;min-height:52px}
+.appstore:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.appstore:active{transform:translateY(0)}
+.appstore .apple{width:23px;height:23px;flex:none;fill:#fff}
+.appstore .t{display:flex;flex-direction:column;line-height:1.05;text-align:left}
+.appstore .t small{font-size:.62rem;opacity:.85;font-weight:500}
+.appstore .t b{font-family:"Poppins",sans-serif;font-weight:600;font-size:1.06rem}
+
+/* ---------- nav ---------- */
+header.nav{position:sticky;top:0;z-index:60;background:rgba(233,241,236,.82);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+header.nav.scrolled{border-color:var(--line);box-shadow:0 1px 0 rgba(12,40,25,.02)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:.5rem;font-family:"Poppins",sans-serif;font-weight:700;font-size:1.25rem;color:var(--ink);letter-spacing:-.01em}
+.brand .leaf{width:28px;height:28px;flex:none}
+.nav-links{display:flex;align-items:center;gap:2rem;font-size:.97rem;font-weight:600}
+.nav-links a{color:var(--ink-soft);transition:color .2s}
+.nav-links a:hover{color:var(--forest)}
+.nav-right{display:flex;align-items:center;gap:1.2rem}
+.nav-right .appstore{padding:.5rem .95rem;min-height:auto}
+.nav-right .appstore .t small{display:none}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px;color:var(--ink)}
+.burger svg{width:26px;height:26px}
+.mnav{position:fixed;inset:66px 0 auto 0;z-index:59;background:#EAF2ED;border-bottom:1px solid var(--line);padding:12px 24px 22px;transform:translateY(-120%);transition:transform .4s var(--ease);box-shadow:var(--shadow-md)}
+.mnav.open{transform:translateY(0)}
+.mnav a{display:block;font-weight:700;font-size:1.1rem;color:var(--ink);padding:.85rem 0;border-bottom:1px solid var(--line)}
+.mnav .btn{margin-top:1rem;width:100%}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(56px,8vw,96px) 0 clamp(60px,8vw,104px);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-20%;right:-10%;width:60%;height:80%;background:radial-gradient(circle,rgba(126,230,168,.28),transparent 62%);pointer-events:none;filter:blur(6px)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,64px);align-items:center;position:relative}
+.hero h1{font-size:clamp(2.7rem,6.2vw,4.5rem);letter-spacing:-.035em;line-height:1;margin:1.1rem 0 1.3rem}
+.hero h1 .grad{background:linear-gradient(120deg,var(--grass),var(--forest));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{max-width:31rem;margin-bottom:2rem}
+.hero-cta{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
+.hero-trust{display:flex;align-items:center;gap:1.3rem;flex-wrap:wrap;margin-top:1.8rem;font-size:.9rem;font-weight:600;color:var(--ink-soft)}
+.hero-trust .stat{display:flex;align-items:center;gap:.5rem}
+.hero-trust .num{font-weight:800;color:var(--ink)}
+.hero-trust .stat[hidden]{display:none}
+.hero-trust .star{color:#F5A623}
+.hero-trust .rc{color:var(--body)}
+.hero-trust .dot{width:5px;height:5px;border-radius:50%;background:var(--mint)}
+.swap{background:var(--soft);color:var(--forest);border-radius:6px;padding:0 .35em;font-weight:800}
+
+/* device */
+.device-wrap{display:flex;justify-content:center;perspective:1400px}
+.device{width:min(320px,80vw);border-radius:46px;background:#0b0f0d;padding:12px;box-shadow:var(--shadow-lg);transform:rotateY(-9deg) rotateX(3deg);transition:transform .5s var(--ease);will-change:transform}
+.device .scr{border-radius:35px;overflow:hidden;line-height:0;background:#fff}
+.device .scr svg{width:100%;height:auto}
+@media(hover:hover) and (pointer:fine){.device{transform:rotateY(-11deg) rotateX(4deg)}}
+
+/* ---------- logos / trust strip ---------- */
+.stripe{background:var(--ink);color:#fff}
+.stripe .wrap{display:flex;flex-wrap:wrap;gap:14px 40px;align-items:center;justify-content:center;padding:20px 24px;text-align:center}
+.stripe .item{display:flex;align-items:center;gap:.6rem;font-weight:600;font-size:1rem;color:#fff}
+.stripe .item svg{width:20px;height:20px;stroke:var(--mint);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,34px);counter-reset:step}
+.step{padding:6px 4px}
+.step .n{width:44px;height:44px;border-radius:12px;background:var(--soft);color:var(--forest);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem;margin-bottom:18px}
+.step h3{font-size:1.3rem;margin-bottom:.5rem}
+.step p{font-size:1.02rem}
+
+/* ---------- feature rows (Apple-style alternating) ---------- */
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:center;margin-bottom:clamp(56px,8vw,104px)}
+.frow:last-child{margin-bottom:0}
+.frow.rev .fr-media{order:2}
+.fr-copy .eyebrow{margin-bottom:.7rem;display:block}
+.fr-copy h3{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:.9rem}
+.fr-copy p{font-size:1.1rem;margin-bottom:1.2rem}
+.fr-list{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+.fr-list li{display:flex;gap:.6rem;align-items:flex-start;color:var(--ink-soft);font-weight:500}
+.fr-list li svg{flex:none;width:22px;height:22px;stroke:var(--forest);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.fr-media{display:flex;justify-content:center}
+.fr-media .device{width:min(280px,72vw);transform:none;box-shadow:var(--shadow-lg)}
+.fr-media .card-media{background:var(--wash);border-radius:28px;padding:34px;width:100%}
+
+/* ---------- feature grid ---------- */
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,22px)}
+.fcard{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.fcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.fcard .ic{width:46px;height:46px;border-radius:12px;background:var(--soft);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.fcard .ic svg{width:24px;height:24px;stroke:var(--forest);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.fcard h3{font-size:1.14rem;margin-bottom:.4rem}
+.fcard p{font-size:.98rem}
+
+/* ---------- price matching explainer ---------- */
+.pm{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,64px);align-items:center}
+.pm h2{font-size:clamp(1.9rem,3.6vw,2.6rem);margin-bottom:1rem}
+.pm p.big{font-size:1.12rem;margin-bottom:1.4rem}
+.know{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow-sm)}
+.know h4{font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;color:var(--forest);margin-bottom:16px}
+.know ul{list-style:none;display:flex;flex-direction:column;gap:15px}
+.know li{display:flex;gap:.8rem;font-size:1rem;line-height:1.5}
+.know li .mk{flex:none;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.78rem}
+.know li .ok{background:var(--soft);color:var(--forest)}
+.know li .no{background:#FBECEC;color:#C0392B}
+.know li .info{background:#EEF2FB;color:#3A5BB8}
+.know .fine{margin-top:16px;padding-top:15px;border-top:1px solid var(--line);font-size:.9rem;color:var(--body)}
+
+/* ---------- showcase ---------- */
+.shots{display:flex;gap:clamp(18px,3vw,32px);justify-content:center;flex-wrap:wrap}
+.shots figure{display:flex;flex-direction:column;align-items:center;gap:16px;max-width:230px}
+.shots .device{width:min(210px,60vw);transform:none;box-shadow:var(--shadow-lg)}
+.shots figcaption{text-align:center}
+.shots figcaption b{display:block;color:var(--ink);font-weight:700;font-size:1.02rem}
+.shots figcaption span{font-size:.92rem}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:760px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;background:none;border:0;cursor:pointer;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding:24px 4px;font-weight:700;font-size:1.14rem;color:var(--ink);-webkit-tap-highlight-color:transparent}
+.faq-q .pl{position:relative;flex:none;width:20px;height:20px}
+.faq-q .pl::before,.faq-q .pl::after{content:"";position:absolute;background:var(--forest);border-radius:2px;transition:transform .3s var(--ease)}
+.faq-q .pl::before{top:9px;left:0;width:20px;height:2px}
+.faq-q .pl::after{left:9px;top:0;width:2px;height:20px}
+.faq-item.open .pl::after{transform:scaleY(0)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .38s var(--ease)}
+.faq-a p{padding:0 4px 24px;font-size:1.04rem;max-width:64ch}
+
+/* ---------- CTA ---------- */
+.cta{background:var(--ink);color:#fff;border-radius:clamp(20px,3vw,32px);padding:clamp(48px,7vw,80px) 24px;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;bottom:-40%;left:50%;transform:translateX(-50%);width:70%;height:100%;background:radial-gradient(circle,rgba(126,230,168,.22),transparent 62%)}
+.cta h2{color:#fff;font-size:clamp(2rem,4.4vw,3.2rem);letter-spacing:-.03em;position:relative}
+.cta p{color:rgba(233,241,236,.82);font-size:1.15rem;max-width:34rem;margin:1rem auto 2rem;position:relative}
+.cta .appstore{background:#fff;color:var(--ink);position:relative}
+.cta .appstore .apple{fill:var(--ink)}
+.cta-micro{margin-top:1.2rem;font-size:.88rem;color:rgba(255,255,255,.6);position:relative}
+
+/* ---------- footer ---------- */
+footer{padding:56px 0 40px;border-top:1px solid var(--line)}
+.foot-top{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-bottom:34px}
+.foot-brand{max-width:22rem}
+.foot-brand .brand{margin-bottom:12px}
+.foot-brand p{font-size:.95rem}
+.foot-cols{display:flex;gap:3.4rem;flex-wrap:wrap}
+.foot-col h5{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink);margin-bottom:14px}
+.foot-col a{display:block;padding:5px 0;color:var(--body);font-size:.96rem;font-weight:500;transition:color .2s}
+.foot-col a:hover{color:var(--forest)}
+.disclaimer{border-top:1px solid var(--line);padding-top:22px;font-size:.82rem;color:#5F6D64;line-height:1.7;max-width:62rem}
+.copyright{margin-top:12px;font-size:.85rem;color:#5F6D64}
+.foot-note{display:block;font-size:.82rem;color:#5F6D64;margin-top:6px;line-height:1.5}
+.foot-col .email-link{word-break:break-word}
+
+/* sticky mobile cta */
+.mcta{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(233,241,236,.92);backdrop-filter:blur(14px);border-top:1px solid var(--line);transform:translateY(130%);transition:transform .4s var(--ease)}
+.mcta.show{transform:translateY(0)}
+.mcta .appstore{width:100%;justify-content:center}
+
+/* ---------- animation: price-match reveal (hero) ---------- */
+.pm-strike{transform-box:fill-box;transform-origin:left center}
+.pm-new{transform-box:fill-box}
+#heroSvg.anim .pm-strike{transform:scaleX(0);animation:pmStrike .45s ease forwards}
+#heroSvg.anim .pm-strike.s1{animation-delay:.30s}
+#heroSvg.anim .pm-strike.s2{animation-delay:.55s}
+#heroSvg.anim .pm-strike.s3{animation-delay:.80s}
+#heroSvg.anim .pm-new{opacity:0;animation:pmPop .42s ease forwards}
+#heroSvg.anim .pm-new.n1{animation-delay:.52s}
+#heroSvg.anim .pm-new.n2{animation-delay:.77s}
+#heroSvg.anim .pm-new.n3{animation-delay:1.02s}
+@keyframes pmStrike{to{transform:scaleX(1)}}
+@keyframes pmPop{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:none}}
+/* ---------- animation: subtle ambient ---------- */
+.hero h1 .grad{background-size:220% 100%;animation:gradShift 7s ease-in-out infinite}
+@keyframes gradShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.hero::before{animation:glowDrift 16s ease-in-out infinite}
+@keyframes glowDrift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-3%,3%) scale(1.06)}}
+.fr-media .device,.shots .device{animation:floatY 6s ease-in-out infinite}
+.frow.rev .fr-media .device{animation-delay:1s}
+.shots figure:nth-child(2) .device{animation-delay:.8s}
+.shots figure:nth-child(3) .device{animation-delay:1.6s}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.07s}.reveal.d2{transition-delay:.14s}.reveal.d3{transition-delay:.21s}
+
+/* skip link */
+.skip{position:absolute;left:12px;top:-64px;z-index:200;background:var(--ink);color:#fff;padding:.7rem 1.1rem;border-radius:10px;font-weight:700;transition:top .2s var(--ease)}
+.skip:focus{top:12px}
+/* scrollspy active nav */
+.nav-links a{position:relative}
+.nav-links a.active{color:var(--forest)}
+.nav-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:2px;background:var(--forest);border-radius:2px}
+/* QR card (desktop only) */
+.qr-card{display:none}
+@media (min-width:901px){
+  .qr-card{display:flex;align-items:center;gap:14px;margin-top:1.7rem;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-sm);width:max-content;max-width:100%}
+  .qr-card .qr{width:90px;height:90px;flex:none;background:#fff;border-radius:8px;padding:6px}
+  .qr-card .qr svg{width:100%;height:100%;display:block}
+  .qr-card .qr-txt{display:flex;flex-direction:column;line-height:1.32}
+  .qr-card .qr-txt b{color:var(--ink);font-size:.98rem}
+  .qr-card .qr-txt span{font-size:.86rem;color:var(--body)}
+}
+/* back to top */
+.totop{position:fixed;right:24px;bottom:24px;z-index:55;width:46px;height:46px;border-radius:50%;background:var(--ink);border:0;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--shadow-md);opacity:0;transform:translateY(12px) scale(.9);pointer-events:none;transition:opacity .3s var(--ease),transform .3s var(--ease)}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+.totop:hover{background:#123a24}
+.totop svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:900px){.totop{bottom:84px;right:16px;width:42px;height:42px}}
+
+.brand-icon{width:30px;height:30px;border-radius:8px;flex:none;object-fit:cover;box-shadow:0 1px 3px rgba(12,40,25,.2)}
+/* colour blobs + parallax */
+.blob{position:absolute;border-radius:50%;filter:blur(48px);z-index:0;pointer-events:none;will-change:transform}
+.hero .wrap{position:relative;z-index:1}
+.hero-blob-1{width:460px;height:460px;top:-140px;right:-90px;background:radial-gradient(circle,rgba(126,230,168,.5),transparent 68%)}
+.hero-blob-2{width:380px;height:380px;bottom:-160px;left:-130px;background:radial-gradient(circle,rgba(46,158,91,.28),transparent 70%)}
+#pricematch{overflow:hidden}
+#pricematch .wrap{position:relative;z-index:1}
+.pm-blob{width:440px;height:440px;top:-150px;left:-130px;background:radial-gradient(circle,rgba(126,230,168,.4),transparent 70%)}
+
+a:focus-visible,button:focus-visible{outline:3px solid var(--grass);outline-offset:3px;border-radius:8px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .nav-links{display:none}
+  .nav-right .appstore{display:none}
+  .burger{display:block}
+  .hero-grid{grid-template-columns:1fr;text-align:center;gap:36px}
+  .hero p.lead{margin-left:auto;margin-right:auto}
+  .hero-cta,.hero-trust{justify-content:center}
+  .hero-grid .device-wrap{order:-1}
+  .steps{grid-template-columns:1fr;gap:26px;max-width:24rem;margin:0 auto}
+  .frow,.frow.rev{grid-template-columns:1fr;gap:28px;text-align:center}
+  .frow .fr-media,.frow.rev .fr-media{order:-1}
+  .fr-list{max-width:22rem;margin:0 auto;text-align:left}
+  .fgrid{grid-template-columns:repeat(2,1fr)}
+  .pm{grid-template-columns:1fr;gap:30px}
+  .mcta{display:block}
+  footer{padding-bottom:92px}
+  .foot-top{flex-direction:column}
+}
+@media (max-width:520px){
+  .fgrid{grid-template-columns:1fr}
+  .stripe .wrap{gap:12px 22px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .device{transition:none}
+  *{animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand" aria-label="Pricewise home">
+      <img class="brand-icon" src="data:image/jpeg;base64,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" alt="Pricewise app icon" width="30" height="30" />
+      pricewise
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#pricematch">Price matching</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a class="appstore" href="https://apps.apple.com/ca/app/id6770648419" aria-label="Download Pricewise on the App Store">
+        <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 12.53c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.62-1.7-3.19-1.72-1.36-.14-2.65.8-3.34.8-.68 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.1 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.05 1.52-.71 2.85-.71 1.33 0 1.71.71 2.88.69 1.19-.02 1.94-1.08 2.67-2.15.84-1.23 1.19-2.42 1.21-2.48-.03-.01-2.32-.89-2.34-3.53zM14.88 5.9c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.3-.56.65-1.05 1.68-.92 2.67.97.08 1.96-.49 2.56-1.21z"/></svg>
+        <span class="t"><small>Download on the</small><b>App Store</b></span>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobile">
+  <a href="#how">How it works</a>
+  <a href="#features">Features</a>
+  <a href="#pricematch">Price matching</a>
+  <a href="#faq">FAQ</a>
+  <a class="btn btn-primary" href="https://apps.apple.com/ca/app/id6770648419">Get the app</a>
+</nav>
+
+<span id="top"></span>
+<main id="main">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <div class="blob hero-blob-1" data-parallax="0.12" aria-hidden="true"></div>
+  <div class="blob hero-blob-2" data-parallax="-0.08" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow reveal">Grocery price matching · GTA</span>
+      <h1 class="reveal d1">same cart.<br><span class="grad">smaller bill.</span></h1>
+      <p class="lead reveal d2">Pricewise finds price-match deals on your grocery list and directs you to the nearest participating store in the Greater Toronto Area. The same groceries you already buy — for less.</p>
+      <div class="hero-cta reveal d3">
+        <a class="appstore" href="https://apps.apple.com/ca/app/id6770648419" aria-label="Download Pricewise on the App Store">
+          <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 12.53c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.62-1.7-3.19-1.72-1.36-.14-2.65.8-3.34.8-.68 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.1 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.05 1.52-.71 2.85-.71 1.33 0 1.71.71 2.88.69 1.19-.02 1.94-1.08 2.67-2.15.84-1.23 1.19-2.42 1.21-2.48-.03-.01-2.32-.89-2.34-3.53zM14.88 5.9c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.3-.56.65-1.05 1.68-.92 2.67.97.08 1.96-.49 2.56-1.21z"/></svg>
+          <span class="t"><small>Download on the</small><b>App Store</b></span>
+        </a>
+        <a class="btn-text" href="#how">See how it works <span class="arw" aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-trust reveal d3">
+        <span class="stat" id="ratingStat" hidden><span class="star" aria-hidden="true">★</span> <span class="num" id="ratingVal"></span> <span class="rc" id="ratingCount"></span></span>
+        <span class="stat" id="dlStat" hidden><span class="num" id="dlVal"></span> downloads</span>
+        <span class="stat">Free on iPhone</span>
+        <span class="stat">11 languages</span>
+      </div>
+      <div class="qr-card" aria-label="Get Pricewise on your phone">
+        <div class="qr"><svg viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QR code linking to the Pricewise App Store page" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM8 0h1v1h-1zM9 0h1v1h-1zM12 0h1v1h-1zM14 0h1v1h-1zM17 0h1v1h-1zM18 0h1v1h-1zM19 0h1v1h-1zM22 0h1v1h-1zM23 0h1v1h-1zM24 0h1v1h-1zM25 0h1v1h-1zM26 0h1v1h-1zM27 0h1v1h-1zM28 0h1v1h-1zM0 1h1v1h-1zM6 1h1v1h-1zM8 1h1v1h-1zM9 1h1v1h-1zM10 1h1v1h-1zM12 1h1v1h-1zM13 1h1v1h-1zM18 1h1v1h-1zM22 1h1v1h-1zM28 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM9 2h1v1h-1zM10 2h1v1h-1zM11 2h1v1h-1zM13 2h1v1h-1zM16 2h1v1h-1zM18 2h1v1h-1zM19 2h1v1h-1zM20 2h1v1h-1zM22 2h1v1h-1zM24 2h1v1h-1zM25 2h1v1h-1zM26 2h1v1h-1zM28 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM6 3h1v1h-1zM8 3h1v1h-1zM9 3h1v1h-1zM10 3h1v1h-1zM12 3h1v1h-1zM13 3h1v1h-1zM15 3h1v1h-1zM16 3h1v1h-1zM17 3h1v1h-1zM19 3h1v1h-1zM22 3h1v1h-1zM24 3h1v1h-1zM25 3h1v1h-1zM26 3h1v1h-1zM28 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM6 4h1v1h-1zM11 4h1v1h-1zM15 4h1v1h-1zM17 4h1v1h-1zM19 4h1v1h-1zM22 4h1v1h-1zM24 4h1v1h-1zM25 4h1v1h-1zM26 4h1v1h-1zM28 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM9 5h1v1h-1zM10 5h1v1h-1zM12 5h1v1h-1zM13 5h1v1h-1zM14 5h1v1h-1zM17 5h1v1h-1zM19 5h1v1h-1zM20 5h1v1h-1zM22 5h1v1h-1zM28 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h1v1h-1zM23 6h1v1h-1zM24 6h1v1h-1zM25 6h1v1h-1zM26 6h1v1h-1zM27 6h1v1h-1zM28 6h1v1h-1zM8 7h1v1h-1zM9 7h1v1h-1zM10 7h1v1h-1zM11 7h1v1h-1zM12 7h1v1h-1zM14 7h1v1h-1zM15 7h1v1h-1zM16 7h1v1h-1zM17 7h1v1h-1zM18 7h1v1h-1zM19 7h1v1h-1zM0 8h1v1h-1zM2 8h1v1h-1zM3 8h1v1h-1zM5 8h1v1h-1zM6 8h1v1h-1zM7 8h1v1h-1zM10 8h1v1h-1zM11 8h1v1h-1zM12 8h1v1h-1zM17 8h1v1h-1zM18 8h1v1h-1zM22 8h1v1h-1zM25 8h1v1h-1zM27 8h1v1h-1zM28 8h1v1h-1zM0 9h1v1h-1zM1 9h1v1h-1zM3 9h1v1h-1zM5 9h1v1h-1zM7 9h1v1h-1zM10 9h1v1h-1zM11 9h1v1h-1zM13 9h1v1h-1zM14 9h1v1h-1zM18 9h1v1h-1zM19 9h1v1h-1zM20 9h1v1h-1zM21 9h1v1h-1zM22 9h1v1h-1zM24 9h1v1h-1zM28 9h1v1h-1zM1 10h1v1h-1zM2 10h1v1h-1zM5 10h1v1h-1zM6 10h1v1h-1zM7 10h1v1h-1zM8 10h1v1h-1zM9 10h1v1h-1zM11 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM17 10h1v1h-1zM21 10h1v1h-1zM22 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM27 10h1v1h-1zM2 11h1v1h-1zM3 11h1v1h-1zM4 11h1v1h-1zM5 11h1v1h-1zM8 11h1v1h-1zM9 11h1v1h-1zM10 11h1v1h-1zM13 11h1v1h-1zM15 11h1v1h-1zM18 11h1v1h-1zM28 11h1v1h-1zM0 12h1v1h-1zM1 12h1v1h-1zM4 12h1v1h-1zM5 12h1v1h-1zM6 12h1v1h-1zM7 12h1v1h-1zM9 12h1v1h-1zM10 12h1v1h-1zM12 12h1v1h-1zM13 12h1v1h-1zM15 12h1v1h-1zM16 12h1v1h-1zM17 12h1v1h-1zM18 12h1v1h-1zM23 12h1v1h-1zM25 12h1v1h-1zM26 12h1v1h-1zM3 13h1v1h-1zM4 13h1v1h-1zM7 13h1v1h-1zM10 13h1v1h-1zM11 13h1v1h-1zM12 13h1v1h-1zM15 13h1v1h-1zM19 13h1v1h-1zM22 13h1v1h-1zM26 13h1v1h-1zM27 13h1v1h-1zM28 13h1v1h-1zM0 14h1v1h-1zM2 14h1v1h-1zM3 14h1v1h-1zM6 14h1v1h-1zM7 14h1v1h-1zM8 14h1v1h-1zM12 14h1v1h-1zM13 14h1v1h-1zM14 14h1v1h-1zM16 14h1v1h-1zM17 14h1v1h-1zM18 14h1v1h-1zM19 14h1v1h-1zM22 14h1v1h-1zM26 14h1v1h-1zM27 14h1v1h-1zM28 14h1v1h-1zM1 15h1v1h-1zM2 15h1v1h-1zM7 15h1v1h-1zM11 15h1v1h-1zM12 15h1v1h-1zM16 15h1v1h-1zM19 15h1v1h-1zM20 15h1v1h-1zM24 15h1v1h-1zM27 15h1v1h-1zM4 16h1v1h-1zM6 16h1v1h-1zM13 16h1v1h-1zM14 16h1v1h-1zM16 16h1v1h-1zM18 16h1v1h-1zM19 16h1v1h-1zM20 16h1v1h-1zM21 16h1v1h-1zM24 16h1v1h-1zM25 16h1v1h-1zM27 16h1v1h-1zM4 17h1v1h-1zM5 17h1v1h-1zM8 17h1v1h-1zM10 17h1v1h-1zM12 17h1v1h-1zM13 17h1v1h-1zM14 17h1v1h-1zM15 17h1v1h-1zM16 17h1v1h-1zM21 17h1v1h-1zM23 17h1v1h-1zM25 17h1v1h-1zM26 17h1v1h-1zM27 17h1v1h-1zM0 18h1v1h-1zM2 18h1v1h-1zM5 18h1v1h-1zM6 18h1v1h-1zM8 18h1v1h-1zM10 18h1v1h-1zM11 18h1v1h-1zM15 18h1v1h-1zM18 18h1v1h-1zM20 18h1v1h-1zM21 18h1v1h-1zM24 18h1v1h-1zM26 18h1v1h-1zM3 19h1v1h-1zM4 19h1v1h-1zM7 19h1v1h-1zM8 19h1v1h-1zM11 19h1v1h-1zM12 19h1v1h-1zM16 19h1v1h-1zM17 19h1v1h-1zM18 19h1v1h-1zM23 19h1v1h-1zM26 19h1v1h-1zM1 20h1v1h-1zM2 20h1v1h-1zM4 20h1v1h-1zM5 20h1v1h-1zM6 20h1v1h-1zM9 20h1v1h-1zM10 20h1v1h-1zM11 20h1v1h-1zM16 20h1v1h-1zM17 20h1v1h-1zM18 20h1v1h-1zM19 20h1v1h-1zM20 20h1v1h-1zM21 20h1v1h-1zM22 20h1v1h-1zM23 20h1v1h-1zM24 20h1v1h-1zM25 20h1v1h-1zM26 20h1v1h-1zM8 21h1v1h-1zM9 21h1v1h-1zM11 21h1v1h-1zM12 21h1v1h-1zM13 21h1v1h-1zM14 21h1v1h-1zM16 21h1v1h-1zM20 21h1v1h-1zM24 21h1v1h-1zM25 21h1v1h-1zM26 21h1v1h-1zM27 21h1v1h-1zM28 21h1v1h-1zM0 22h1v1h-1zM1 22h1v1h-1zM2 22h1v1h-1zM3 22h1v1h-1zM4 22h1v1h-1zM5 22h1v1h-1zM6 22h1v1h-1zM8 22h1v1h-1zM9 22h1v1h-1zM10 22h1v1h-1zM14 22h1v1h-1zM16 22h1v1h-1zM17 22h1v1h-1zM19 22h1v1h-1zM20 22h1v1h-1zM22 22h1v1h-1zM24 22h1v1h-1zM25 22h1v1h-1zM27 22h1v1h-1zM0 23h1v1h-1zM6 23h1v1h-1zM8 23h1v1h-1zM9 23h1v1h-1zM10 23h1v1h-1zM11 23h1v1h-1zM13 23h1v1h-1zM14 23h1v1h-1zM16 23h1v1h-1zM20 23h1v1h-1zM24 23h1v1h-1zM25 23h1v1h-1zM0 24h1v1h-1zM2 24h1v1h-1zM3 24h1v1h-1zM4 24h1v1h-1zM6 24h1v1h-1zM9 24h1v1h-1zM10 24h1v1h-1zM11 24h1v1h-1zM12 24h1v1h-1zM17 24h1v1h-1zM20 24h1v1h-1zM21 24h1v1h-1zM22 24h1v1h-1zM23 24h1v1h-1zM24 24h1v1h-1zM26 24h1v1h-1zM27 24h1v1h-1zM28 24h1v1h-1zM0 25h1v1h-1zM2 25h1v1h-1zM3 25h1v1h-1zM4 25h1v1h-1zM6 25h1v1h-1zM8 25h1v1h-1zM9 25h1v1h-1zM12 25h1v1h-1zM14 25h1v1h-1zM15 25h1v1h-1zM16 25h1v1h-1zM17 25h1v1h-1zM18 25h1v1h-1zM20 25h1v1h-1zM21 25h1v1h-1zM24 25h1v1h-1zM25 25h1v1h-1zM28 25h1v1h-1zM0 26h1v1h-1zM2 26h1v1h-1zM3 26h1v1h-1zM4 26h1v1h-1zM6 26h1v1h-1zM8 26h1v1h-1zM12 26h1v1h-1zM13 26h1v1h-1zM20 26h1v1h-1zM21 26h1v1h-1zM23 26h1v1h-1zM26 26h1v1h-1zM28 26h1v1h-1zM0 27h1v1h-1zM6 27h1v1h-1zM14 27h1v1h-1zM16 27h1v1h-1zM18 27h1v1h-1zM20 27h1v1h-1zM21 27h1v1h-1zM23 27h1v1h-1zM24 27h1v1h-1zM25 27h1v1h-1zM27 27h1v1h-1zM0 28h1v1h-1zM1 28h1v1h-1zM2 28h1v1h-1zM3 28h1v1h-1zM4 28h1v1h-1zM5 28h1v1h-1zM6 28h1v1h-1zM8 28h1v1h-1zM13 28h1v1h-1zM14 28h1v1h-1zM15 28h1v1h-1zM19 28h1v1h-1zM20 28h1v1h-1zM23 28h1v1h-1zM27 28h1v1h-1z" fill="#0C2819"/></svg></div>
+        <div class="qr-txt"><b>Get it on your phone</b><span>Scan with your iPhone camera to install.</span></div>
+      </div>
+    </div>
+    <div class="device-wrap reveal d2">
+      <div class="device" id="heroDevice">
+        <div class="scr">
+          <!-- SWAP: hero screen → replace this <svg> with <img src="assets/hero.png" alt="Pricewise app showing price-matched grocery items"> -->
+          <svg id="heroSvg" viewBox="0 0 270 585" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pricewise app screen showing price-matched grocery items and total savings">
+            <rect width="270" height="585" fill="#F6FAF8"/>
+            <text x="18" y="30" font-family="Manrope,sans-serif" font-size="11" font-weight="700" fill="#0C2819">9:41</text>
+            <g fill="#0C2819"><rect x="232" y="20" width="16" height="10" rx="2"/><rect x="214" y="22" width="12" height="8" rx="1.5"/><rect x="200" y="24" width="9" height="6" rx="1.5"/></g>
+            <text x="18" y="66" font-family="Manrope,sans-serif" font-size="19" font-weight="800" fill="#0C2819">Your list</text>
+            <text x="18" y="85" font-family="Manrope,sans-serif" font-size="10.5" fill="#55635C">6 items · 3 price-match deals</text>
+            <circle cx="248" cy="58" r="15" fill="#E7F6ED"/><path d="M242 58l4 4 8-8" stroke="#1F7A47" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            <g font-family="Manrope,sans-serif">
+              <rect x="16" y="100" width="238" height="66" rx="15" fill="#fff" stroke="#E7ECE9"/><rect x="28" y="114" width="34" height="34" rx="10" fill="#E7F6ED"/><text x="45" y="136" font-size="16" text-anchor="middle">🍗</text><text x="74" y="128" font-size="12.5" font-weight="700" fill="#0C2819">Chicken breast</text><text x="74" y="146" font-size="9.5" fill="#1F7A47">Match at FreshMart</text><text x="242" y="126" font-size="10" fill="#9AA8A0" text-anchor="end">$12.99</text><rect class="pm-strike s1" x="211" y="121.5" width="33" height="1.6" rx="1" fill="#9AA8A0"/><text class="pm-new n1" x="242" y="146" font-size="14" font-weight="800" fill="#1F7A47" text-anchor="end">$9.97</text>
+              <rect x="16" y="174" width="238" height="66" rx="15" fill="#fff" stroke="#E7ECE9"/><rect x="28" y="188" width="34" height="34" rx="10" fill="#E7F6ED"/><text x="45" y="210" font-size="16" text-anchor="middle">🧀</text><text x="74" y="202" font-size="12.5" font-weight="700" fill="#0C2819">Cheddar cheese</text><text x="74" y="220" font-size="9.5" fill="#1F7A47">Match at ValueGrocer</text><text x="242" y="200" font-size="10" fill="#9AA8A0" text-anchor="end">$7.49</text><rect class="pm-strike s2" x="214" y="195.5" width="30" height="1.6" rx="1" fill="#9AA8A0"/><text class="pm-new n2" x="242" y="220" font-size="14" font-weight="800" fill="#1F7A47" text-anchor="end">$5.99</text>
+              <rect x="16" y="248" width="238" height="66" rx="15" fill="#fff" stroke="#E7ECE9"/><rect x="28" y="262" width="34" height="34" rx="10" fill="#E7F6ED"/><text x="45" y="284" font-size="16" text-anchor="middle">🥚</text><text x="74" y="276" font-size="12.5" font-weight="700" fill="#0C2819">Eggs · dozen</text><text x="74" y="294" font-size="9.5" fill="#1F7A47">Match at GreenLeaf</text><text x="242" y="274" font-size="10" fill="#9AA8A0" text-anchor="end">$5.29</text><rect class="pm-strike s3" x="214" y="269.5" width="30" height="1.6" rx="1" fill="#9AA8A0"/><text class="pm-new n3" x="242" y="294" font-size="14" font-weight="800" fill="#1F7A47" text-anchor="end">$3.99</text>
+            </g>
+            <rect x="16" y="330" width="238" height="150" rx="18" fill="#0C2819"/>
+            <text x="135" y="368" font-family="Manrope,sans-serif" font-size="11" fill="#7EE6A8" text-anchor="middle">Total you could keep</text>
+            <text class="count" data-count="6.32" data-prefix="$" data-decimals="2" x="135" y="414" font-family="Manrope,sans-serif" font-size="40" font-weight="800" fill="#fff" text-anchor="middle">$6.32</text>
+            <rect x="70" y="434" width="130" height="30" rx="15" fill="#7EE6A8"/><text x="135" y="453" font-family="Manrope,sans-serif" font-size="11" font-weight="800" fill="#0C2819" text-anchor="middle">Start this trip</text>
+            <rect x="0" y="520" width="270" height="65" fill="#fff"/><line x1="0" y1="520" x2="270" y2="520" stroke="#E7ECE9"/>
+            <g font-family="Manrope,sans-serif" font-size="8" text-anchor="middle" font-weight="600"><text x="45" y="556" fill="#1F7A47">▤</text><text x="45" y="570" fill="#1F7A47">List</text><text x="135" y="556" fill="#9AA8A0">◎</text><text x="135" y="570" fill="#9AA8A0">Stores</text><text x="225" y="556" fill="#9AA8A0">▦</text><text x="225" y="570" fill="#9AA8A0">Savings</text></g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TRUST STRIPE ============================ -->
+<section class="stripe" aria-label="Highlights">
+  <div class="wrap">
+    <span class="item"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> 100% free</span>
+    <span class="item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg> 11 languages</span>
+    <span class="item"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Built for the GTA</span>
+    <span class="item"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><line x1="11" y1="18" x2="13" y2="18"/></svg> On iPhone</span>
+  </div>
+</section>
+
+<!-- ============================ HOW IT WORKS ============================ -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">List. Compare. Save.</span>
+      <h2>How Pricewise saves you money on groceries</h2>
+      <p>No coupon-clipping and no driving all over town. You shop the way you already do — Pricewise handles the math.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal d1"><div class="n">1</div><h3>Build your list</h3><p>Add the groceries you were going to buy anyway. Type them in, or share one list with the whole household.</p></div>
+      <div class="step reveal d2"><div class="n">2</div><h3>See what's matchable</h3><p>Pricewise checks your list against this week's flyer deals and flags the items you could get price-matched.</p></div>
+      <div class="step reveal d3"><div class="n">3</div><h3>Save at the nearest store</h3><p>Get directions to the closest store that will honour the match, and watch your savings add up over time.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FEATURE ROWS ============================ -->
+<section class="sec wash" id="features">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">What's inside</span>
+      <h2>Built to shrink the receipt, not your weekend</h2>
+    </div>
+
+    <div class="frow reveal">
+      <div class="fr-copy">
+        <span class="eyebrow">Price-match finder</span>
+        <h3>Matches on the list you already have</h3>
+        <p>Pricewise isn't a "cheapest store" finder. It reads this week's flyers and surfaces price-match deals on the specific items in your cart — so you save on what you were buying anyway.</p>
+        <ul class="fr-list">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Reads the flyers so you don't have to</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Flags only the items worth matching this week</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Shows the before and after price on each item</li>
+        </ul>
+      </div>
+      <div class="fr-media">
+        <div class="device">
+          <div class="scr">
+            <!-- SWAP: matches screen -->
+            <svg viewBox="0 0 270 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Price-match results for items on a grocery list">
+              <rect width="270" height="560" fill="#F6FAF8"/>
+              <text x="18" y="52" font-family="Manrope,sans-serif" font-size="18" font-weight="800" fill="#0C2819">Matches found</text>
+              <text x="18" y="72" font-family="Manrope,sans-serif" font-size="10.5" fill="#55635C">3 items worth matching this week</text>
+              <g font-family="Manrope,sans-serif">
+                <rect x="16" y="88" width="238" height="62" rx="14" fill="#fff" stroke="#E7ECE9"/><rect x="28" y="102" width="32" height="32" rx="9" fill="#E7F6ED"/><text x="44" y="123" font-size="15" text-anchor="middle">🍗</text><text x="70" y="114" font-size="12" font-weight="700" fill="#0C2819">Chicken breast</text><text x="70" y="131" font-size="9" fill="#1F7A47">Match at FreshMart</text><text x="242" y="114" font-size="9.5" fill="#9AA8A0" text-anchor="end" text-decoration="line-through">$12.99</text><text x="242" y="132" font-size="13" font-weight="800" fill="#1F7A47" text-anchor="end">$9.97</text>
+                <rect x="16" y="158" width="238" height="62" rx="14" fill="#fff" stroke="#E7ECE9"/><rect x="28" y="172" width="32" height="32" rx="9" fill="#E7F6ED"/><text x="44" y="193" font-size="15" text-anchor="middle">🧀</text><text x="70" y="184" font-size="12" font-weight="700" fill="#0C2819">Cheddar cheese</text><text x="70" y="201" font-size="9" fill="#1F7A47">Match at ValueGrocer</text><text x="242" y="184" font-size="9.5" fill="#9AA8A0" text-anchor="end" text-decoration="line-through">$7.49</text><text x="242" y="202" font-size="13" font-weight="800" fill="#1F7A47" text-anchor="end">$5.99</text>
+                <rect x="16" y="228" width="238" height="62" rx="14" fill="#fff" stroke="#E7ECE9"/><rect x="28" y="242" width="32" height="32" rx="9" fill="#E7F6ED"/><text x="44" y="263" font-size="15" text-anchor="middle">🥚</text><text x="70" y="254" font-size="12" font-weight="700" fill="#0C2819">Eggs · dozen</text><text x="70" y="271" font-size="9" fill="#1F7A47">Match at GreenLeaf</text><text x="242" y="254" font-size="9.5" fill="#9AA8A0" text-anchor="end" text-decoration="line-through">$5.29</text><text x="242" y="272" font-size="13" font-weight="800" fill="#1F7A47" text-anchor="end">$3.99</text>
+              </g>
+              <rect x="16" y="306" width="238" height="120" rx="16" fill="#0C2819"/><text x="135" y="342" font-family="Manrope,sans-serif" font-size="10.5" fill="#7EE6A8" text-anchor="middle">Total you could keep</text><text class="count" data-count="6.32" data-prefix="$" data-decimals="2" x="135" y="384" font-family="Manrope,sans-serif" font-size="34" font-weight="800" fill="#fff" text-anchor="middle">$6.32</text><rect x="74" y="400" width="122" height="28" rx="14" fill="#7EE6A8"/><text x="135" y="419" font-family="Manrope,sans-serif" font-size="10.5" font-weight="800" fill="#0C2819" text-anchor="middle">Start this trip</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="frow rev reveal">
+      <div class="fr-copy">
+        <span class="eyebrow">Nearest store</span>
+        <h3>The closest store that'll match — not a detour</h3>
+        <p>Saving five dollars isn't saving anything if you burn it in gas getting there. Pricewise sorts by how far you'd actually drive and gives you directions to the nearest participating store.</p>
+        <ul class="fr-list">
+          <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Sorted by real driving distance</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg> Directions straight from your list</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Tuned to the Greater Toronto Area</li>
+        </ul>
+      </div>
+      <div class="fr-media">
+        <div class="device">
+          <div class="scr">
+            <!-- SWAP: nearest-store screen -->
+            <svg viewBox="0 0 270 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Directions to the nearest participating store">
+              <rect width="270" height="560" fill="#EAF3EE"/>
+              <g stroke="#D3E4DA" stroke-width="8" fill="none"><path d="M-10 130h290M-10 320h290M50 -10v420M190 -10v600"/></g>
+              <g stroke="#DDEBE3" stroke-width="4" fill="none"><path d="M120 -10v600M245 -10v600"/></g>
+              <path d="M60 410 Q 66 300 140 300 T 190 150" stroke="#1F7A47" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="1 12"/>
+              <circle cx="60" cy="410" r="8" fill="#0C2819"/><circle cx="60" cy="410" r="3.4" fill="#fff"/>
+              <path d="M190 150c0 10-14 22-14 22s-14-12-14-22a14 14 0 0128 0z" fill="#1F7A47"/><circle cx="176" cy="150" r="5.5" fill="#fff"/>
+              <rect x="16" y="418" width="238" height="122" rx="18" fill="#fff" stroke="#E7ECE9"/>
+              <rect x="30" y="434" width="40" height="40" rx="11" fill="#E7F6ED"/><text x="50" y="460" font-size="18" text-anchor="middle">🛒</text>
+              <text x="82" y="448" font-family="Manrope,sans-serif" font-size="13" font-weight="800" fill="#0C2819">FreshMart Supercentre</text>
+              <text x="82" y="466" font-family="Manrope,sans-serif" font-size="10" fill="#55635C">Nearest match · 1.2 km away</text>
+              <rect x="30" y="488" width="132" height="20" rx="10" fill="#E7F6ED"/><text x="42" y="502" font-family="Manrope,sans-serif" font-size="9" fill="#1F7A47">Matches 4 of your items</text>
+              <text x="30" y="527" font-family="Manrope,sans-serif" font-size="10" fill="#9AA8A0">Open until 10pm</text>
+              <rect x="182" y="434" width="60" height="34" rx="17" fill="#7EE6A8"/><text x="212" y="456" font-family="Manrope,sans-serif" font-size="11" font-weight="800" fill="#0C2819" text-anchor="middle">Go</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FEATURE GRID ============================ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Everything else</span>
+      <h2>Small features that add up</h2>
+    </div>
+    <div class="fgrid">
+      <div class="fcard reveal d1"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></div><h3>Savings tracker</h3><p>Watch your matched savings stack up, trip after trip.</p></div>
+      <div class="fcard reveal d1"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20c0-3 2.5-5 6-5s6 2 6 5M15 19c.5-2 2-3 4.5-3"/></svg></div><h3>Shared lists</h3><p>One list for the whole household — everyone adds to it.</p></div>
+      <div class="fcard reveal d2"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div><h3>11 languages</h3><p>Shop and read your deals in the language you think in.</p></div>
+      <div class="fcard reveal d2"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3>Tuned for the GTA</h3><p>Flyer deals and stores built around where you shop.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PRICE MATCHING ============================ -->
+<section class="sec wash" id="pricematch">
+  <div class="blob pm-blob" data-parallax="0.1" aria-hidden="true"></div>
+  <div class="wrap pm">
+    <div class="pm-copy reveal">
+      <span class="eyebrow">How price matching works</span>
+      <h2>Which GTA grocery stores actually price match?</h2>
+      <p class="big">Many grocery stores will match a competitor's flyer price if you show it at the till. Done right, you get the sale price without hopping between five stores. Pricewise does the tedious part — reading the flyers and figuring out which of your items are worth matching this week.</p>
+      <a class="btn-text" href="https://apps.apple.com/ca/app/id6770648419">Try it free <span class="arw" aria-hidden="true">→</span></a>
+    </div>
+    <div class="know reveal d1">
+      <h4>A few things worth knowing</h4>
+      <ul>
+        <li><span class="mk ok" aria-hidden="true">✓</span><span><strong>No Frills, FreshCo and Giant Tiger</strong> have price-match policies — each with its own rules.</span></li>
+        <li><span class="mk no" aria-hidden="true">✕</span><span><strong>Walmart Canada</strong> ended its Ad Match program in 2020, so it isn't a match option anymore.</span></li>
+        <li><span class="mk info" aria-hidden="true">i</span><span><strong>Metro and Food Basics</strong> don't price-match themselves — but their flyers can be used as proof of a lower price at stores that do.</span></li>
+      </ul>
+      <p class="fine">Policies change and a match is never guaranteed — the store always makes the final call. Pricewise shows you the opportunities; the savings reflect personal experience, not a promised outcome.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SHOWCASE ============================ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">A quick look</span>
+      <h2>A list, a few matches, and directions</h2>
+      <p>That's the whole loop. Here's what it looks like.</p>
+    </div>
+    <div class="shots">
+      <figure class="reveal d1">
+        <div class="device"><div class="scr">
+          <!-- SWAP: list screen -->
+          <svg viewBox="0 0 270 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shopping list screen">
+            <rect width="270" height="560" fill="#fff"/>
+            <text x="18" y="54" font-family="Manrope,sans-serif" font-size="18" font-weight="800" fill="#0C2819">This week's list</text>
+            <text x="18" y="73" font-family="Manrope,sans-serif" font-size="10.5" fill="#55635C">Shared with 2 people</text>
+            <g font-family="Manrope,sans-serif" font-size="12" fill="#0C2819" font-weight="600">
+              <rect x="16" y="90" width="238" height="44" rx="12" fill="#F5F8F6"/><circle cx="38" cy="112" r="9" fill="none" stroke="#1F7A47" stroke-width="2"/><path d="M34 112l3 3 5-6" stroke="#1F7A47" stroke-width="2" fill="none" stroke-linecap="round"/><text x="58" y="116">Milk · 2%</text>
+              <rect x="16" y="142" width="238" height="44" rx="12" fill="#F5F8F6"/><circle cx="38" cy="164" r="9" fill="none" stroke="#1F7A47" stroke-width="2"/><path d="M34 164l3 3 5-6" stroke="#1F7A47" stroke-width="2" fill="none" stroke-linecap="round"/><text x="58" y="168">Bread</text>
+              <rect x="16" y="194" width="238" height="44" rx="12" fill="#fff" stroke="#E7ECE9"/><circle cx="38" cy="216" r="9" fill="none" stroke="#CFD9D2" stroke-width="2"/><text x="58" y="220">Bananas</text>
+              <rect x="16" y="246" width="238" height="44" rx="12" fill="#fff" stroke="#E7ECE9"/><circle cx="38" cy="268" r="9" fill="none" stroke="#CFD9D2" stroke-width="2"/><text x="58" y="272">Rice · basmati</text>
+              <rect x="16" y="298" width="238" height="44" rx="12" fill="#fff" stroke="#E7ECE9"/><circle cx="38" cy="320" r="9" fill="none" stroke="#CFD9D2" stroke-width="2"/><text x="58" y="324">Pasta</text>
+            </g>
+            <rect x="150" y="500" width="104" height="40" rx="20" fill="#1F7A47"/><text x="202" y="525" font-family="Manrope,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">Compare</text>
+          </svg>
+        </div></div>
+        <figcaption><b>Your list</b><span>Type it or share it</span></figcaption>
+      </figure>
+      <figure class="reveal d2">
+        <div class="device"><div class="scr">
+          <!-- SWAP: savings screen -->
+          <svg viewBox="0 0 270 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Savings tracker screen">
+            <rect width="270" height="560" fill="#fff"/>
+            <text x="18" y="54" font-family="Manrope,sans-serif" font-size="18" font-weight="800" fill="#0C2819">Your savings</text>
+            <rect x="16" y="70" width="238" height="106" rx="18" fill="#0C2819"/><text x="34" y="102" font-family="Manrope,sans-serif" font-size="10.5" fill="#7EE6A8">Matched this month</text><text class="count" data-count="74.20" data-prefix="$" data-decimals="2" x="34" y="140" font-family="Manrope,sans-serif" font-size="30" font-weight="800" fill="#fff">$74.20</text><text x="34" y="162" font-family="Manrope,sans-serif" font-size="9.5" fill="rgba(255,255,255,.6)">Across 6 trips · your experience</text>
+            <g><rect x="24" y="300" width="26" height="40" rx="5" fill="#E7F6ED"/><rect x="64" y="278" width="26" height="62" rx="5" fill="#E7F6ED"/><rect x="104" y="292" width="26" height="48" rx="5" fill="#E7F6ED"/><rect x="144" y="262" width="26" height="78" rx="5" fill="#7EE6A8"/><rect x="184" y="270" width="26" height="70" rx="5" fill="#E7F6ED"/><rect x="224" y="248" width="26" height="92" rx="5" fill="#1F7A47"/></g>
+            <line x1="18" y1="341" x2="252" y2="341" stroke="#E7ECE9"/>
+            <g font-family="Manrope,sans-serif" font-size="11" fill="#55635C" font-weight="600"><text x="24" y="380">Meat</text><text x="246" y="380" text-anchor="end" fill="#1F7A47" font-weight="800">$28.10</text><text x="24" y="406">Dairy</text><text x="246" y="406" text-anchor="end" fill="#1F7A47" font-weight="800">$19.40</text><text x="24" y="432">Pantry</text><text x="246" y="432" text-anchor="end" fill="#1F7A47" font-weight="800">$16.30</text></g>
+          </svg>
+        </div></div>
+        <figcaption><b>Savings tracker</b><span>The little wins add up</span></figcaption>
+      </figure>
+      <figure class="reveal d3">
+        <div class="device"><div class="scr">
+          <!-- SWAP: nearest screen (reused) -->
+          <svg viewBox="0 0 270 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nearest store directions screen">
+            <rect width="270" height="560" fill="#EAF3EE"/>
+            <g stroke="#D3E4DA" stroke-width="8" fill="none"><path d="M-10 130h290M-10 320h290M50 -10v420M190 -10v600"/></g>
+            <path d="M60 410 Q 66 300 140 300 T 190 150" stroke="#1F7A47" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="1 12"/>
+            <circle cx="60" cy="410" r="8" fill="#0C2819"/><circle cx="60" cy="410" r="3.4" fill="#fff"/>
+            <path d="M190 150c0 10-14 22-14 22s-14-12-14-22a14 14 0 0128 0z" fill="#1F7A47"/><circle cx="176" cy="150" r="5.5" fill="#fff"/>
+            <rect x="16" y="418" width="238" height="122" rx="18" fill="#fff" stroke="#E7ECE9"/>
+            <rect x="30" y="434" width="40" height="40" rx="11" fill="#E7F6ED"/><text x="50" y="460" font-size="18" text-anchor="middle">🛒</text>
+            <text x="82" y="448" font-family="Manrope,sans-serif" font-size="13" font-weight="800" fill="#0C2819">FreshMart Supercentre</text>
+            <text x="82" y="466" font-family="Manrope,sans-serif" font-size="10" fill="#55635C">Nearest match · 1.2 km away</text>
+            <rect x="30" y="488" width="132" height="20" rx="10" fill="#E7F6ED"/><text x="42" y="502" font-family="Manrope,sans-serif" font-size="9" fill="#1F7A47">Matches 4 of your items</text>
+            <rect x="182" y="434" width="60" height="34" rx="17" fill="#7EE6A8"/><text x="212" y="456" font-family="Manrope,sans-serif" font-size="11" font-weight="800" fill="#0C2819" text-anchor="middle">Go</text>
+          </svg>
+        </div></div>
+        <figcaption><b>Nearest store</b><span>Directions in a tap</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section class="sec wash" id="faq">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Good to know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq reveal">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What is Pricewise?<span class="pl" aria-hidden="true"></span></button><div class="faq-a"><p>Pricewise is a free iPhone app for shoppers in the Greater Toronto Area. It checks your grocery list for price-match deals from this week's flyers and directs you to the nearest store that will honour them — so you save on the groceries you already buy, without hunting through flyers or driving all over town.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Is Pricewise free?<span class="pl" aria-hidden="true"></span></button><div class="faq-a"><p>Yes — free to download on the App Store. It's built by a solo founder in Toronto, and the goal is simply to help you keep a bit more of your grocery money.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Does it find the single cheapest store?<span class="pl" aria-hidden="true"></span></button><div class="faq-a"><p>No — and that's on purpose. Pricewise looks at the list you already have and finds price-match deals on those specific items, then directs you to the nearest store that will honour them. It's about matching your cart, not ranking every store in the city.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Which stores can I price-match at?<span class="pl" aria-hidden="true"></span></button><div class="faq-a"><p>It varies by store and changes over time. Common ones in the GTA include No Frills, FreshCo and Giant Tiger. Walmart Canada ended its Ad Match program in 2020, and Metro and Food Basics don't price-match — though their flyers can be used as proof of a lower price at stores that do.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Is price-matching guaranteed?<span class="pl" aria-hidden="true"></span></button><div class="faq-a"><p>Never. Every store has its own policy and the final call is always theirs. Pricewise surfaces the opportunities — the savings are real when they work out, but they're a possibility, not a promise.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What languages does it support?<span class="pl" aria-hidden="true"></span></button><div class="faq-a"><p>Eleven, so you can add your list and read your deals in the language you think in.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Is there an Android version?<span class="pl" aria-hidden="true"></span></button><div class="faq-a"><p>Pricewise is on iPhone right now. The fastest way to hear when anything changes is @pricewisegrocery on Instagram.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CTA ============================ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="cta reveal">
+      <h2>Same cart. Smaller bill.</h2>
+      <p>Download Pricewise and find out what your usual grocery run could've cost a little less.</p>
+      <a class="appstore" href="https://apps.apple.com/ca/app/id6770648419" aria-label="Download Pricewise on the App Store">
+        <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 12.53c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.62-1.7-3.19-1.72-1.36-.14-2.65.8-3.34.8-.68 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.1 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.05 1.52-.71 2.85-.71 1.33 0 1.71.71 2.88.69 1.19-.02 1.94-1.08 2.67-2.15.84-1.23 1.19-2.42 1.21-2.48-.03-.01-2.32-.89-2.34-3.53zM14.88 5.9c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.3-.56.65-1.05 1.68-.92 2.67.97.08 1.96-.49 2.56-1.21z"/></svg>
+        <span class="t"><small>Download on the</small><b>App Store</b></span>
+      </a>
+      <p class="cta-micro">Free · for iPhone · made in Toronto</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="#top" class="brand"><img class="brand-icon" src="data:image/jpeg;base64,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" alt="Pricewise app icon" width="30" height="30" /> pricewise</a>
+        <p>An independent grocery price-match app, made in Toronto for shoppers across the Greater Toronto Area.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h5>Product</h5>
+          <a href="https://apps.apple.com/ca/app/id6770648419">Download on the App Store</a>
+          <a href="#how">How it works</a>
+          <a href="#features">Features</a>
+          <a href="#pricematch">Price matching</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="https://instagram.com/pricewisegrocery">Instagram</a>
+          <a href="#faq">FAQ</a>
+          <a href="https://pricewise-74d96.web.app/privacy.html">Privacy Policy</a>
+        </div>
+        <div class="foot-col">
+          <h5>Contact</h5>
+          <a class="email-link" data-u="pricewisegrocery" data-d="gmail.com" href="mailto:">pricewisegrocery&#160;[at]&#160;gmail&#160;[dot]&#160;com</a>
+          <span class="foot-note">Support, press &amp; privacy enquiries</span>
+        </div>
+      </div>
+    </div>
+    <p class="disclaimer">Pricewise Grocery is an independent app and is not affiliated with, endorsed by, or sponsored by any grocery retailer or flyer. Store names are used for identification purposes only. Price-matching depends on each store's current policy and is never guaranteed — savings shown reflect personal experience, not a promised outcome.</p>
+    <p class="copyright">© <span id="year">2026</span> Pricewise Grocery · Made in Toronto 🍁</p>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div class="mcta" id="mcta">
+  <a class="appstore" href="https://apps.apple.com/ca/app/id6770648419" aria-label="Download Pricewise on the App Store">
+    <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 12.53c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.62-1.7-3.19-1.72-1.36-.14-2.65.8-3.34.8-.68 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.1 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.05 1.52-.71 2.85-.71 1.33 0 1.71.71 2.88.69 1.19-.02 1.94-1.08 2.67-2.15.84-1.23 1.19-2.42 1.21-2.48-.03-.01-2.32-.89-2.34-3.53zM14.88 5.9c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.3-.56.65-1.05 1.68-.92 2.67.97.08 1.96-.49 2.56-1.21z"/></svg>
+    <span class="t"><small>Free · download on the</small><b>App Store</b></span>
+  </a>
+</div>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  var onScroll=function(){nav.classList.toggle('scrolled',window.scrollY>8);};
+  onScroll();addEventListener('scroll',onScroll,{passive:true});
+
+  var burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+  burger.addEventListener('click',function(){var o=mnav.classList.toggle('open');burger.setAttribute('aria-expanded',o);});
+  mnav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mnav.classList.remove('open');burger.setAttribute('aria-expanded','false');});});
+
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click',function(){
+      var item=q.parentElement,a=q.nextElementSibling,open=item.classList.toggle('open');
+      q.setAttribute('aria-expanded',open);
+      a.style.maxHeight=open?a.scrollHeight+'px':null;
+    });
+  });
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+  // subtle pointer tilt on hero device (fine pointer, motion allowed)
+  var dev=document.getElementById('heroDevice');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(dev && !reduce && matchMedia('(hover:hover) and (pointer:fine)').matches){
+    var raf=null;
+    addEventListener('pointermove',function(e){
+      if(raf)return;
+      raf=requestAnimationFrame(function(){
+        raf=null;
+        var x=(e.clientX/innerWidth-0.5), y=(e.clientY/innerHeight-0.5);
+        dev.style.transform='rotateY('+(-11 + x*7).toFixed(2)+'deg) rotateX('+(4 - y*6).toFixed(2)+'deg)';
+      });
+    },{passive:true});
+  }
+
+  // sticky mobile CTA: show after hero, hide at footer
+  var mcta=document.getElementById('mcta'),footer=document.querySelector('footer');
+  var footVisible=false;
+  new IntersectionObserver(function(es){footVisible=es[0].isIntersecting;upd();},{threshold:.05}).observe(footer);
+  function upd(){mcta.classList.toggle('show',window.scrollY>560&&!footVisible);}
+  addEventListener('scroll',upd,{passive:true});upd();
+
+  // price-match reveal + count-up (motion-aware; static state stays correct without JS)
+  var heroSvg=document.getElementById('heroSvg');
+  if(heroSvg && !reduce) heroSvg.classList.add('anim');
+  function countUp(el){
+    if(el.dataset.done) return; el.dataset.done='1';
+    var target=parseFloat(el.dataset.count),dec=+(el.dataset.decimals||0),pre=el.dataset.prefix||'',suf=el.dataset.suffix||'';
+    if(reduce){el.textContent=pre+target.toFixed(dec)+suf;return;}
+    var dur=1100,s0=null;
+    function step(t){if(!s0)s0=t;var p=Math.min((t-s0)/dur,1),e=1-Math.pow(1-p,3);el.textContent=pre+(target*e).toFixed(dec)+suf;if(p<1)requestAnimationFrame(step);else el.textContent=pre+target.toFixed(dec)+suf;}
+    requestAnimationFrame(step);
+  }
+  var counts=document.querySelectorAll('.count');
+  if(!reduce) counts.forEach(function(el){var d=+(el.dataset.decimals||0);el.textContent=(el.dataset.prefix||'')+(0).toFixed(d)+(el.dataset.suffix||'');});
+  var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){countUp(e.target);cio.unobserve(e.target);}});},{threshold:.35});
+  counts.forEach(function(el){cio.observe(el);});
+
+  // scrollspy: highlight current section in nav
+  var navMap={};
+  document.querySelectorAll('.nav-links a').forEach(function(a){var h=a.getAttribute('href');if(h&&h.charAt(0)==='#')navMap[h.slice(1)]=a;});
+  var spySections=Object.keys(navMap).map(function(id){return document.getElementById(id);}).filter(Boolean);
+  if(spySections.length){
+    var spy=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){
+        Object.keys(navMap).forEach(function(k){navMap[k].classList.remove('active');});
+        if(navMap[e.target.id])navMap[e.target.id].classList.add('active');
+      }});
+    },{rootMargin:'-45% 0px -50% 0px',threshold:0});
+    spySections.forEach(function(s){spy.observe(s);});
+  }
+  // back to top
+  var totop=document.getElementById('totop');
+  if(totop){
+    var tt=function(){totop.classList.toggle('show',window.scrollY>900);};
+    tt();addEventListener('scroll',tt,{passive:true});
+    totop.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+  }
+
+  // parallax (motion-aware): drift colour blobs as you scroll
+  var pxEls=[].slice.call(document.querySelectorAll('[data-parallax]'));
+  if(pxEls.length && !reduce){
+    var measure=function(){pxEls.forEach(function(el){el.style.transform='';var r=el.getBoundingClientRect();el._c=r.top+window.pageYOffset+el.offsetHeight/2;});};
+    var pTick=false;
+    var render=function(){pTick=false;var vc=window.pageYOffset+window.innerHeight/2;
+      pxEls.forEach(function(el){var dd=(vc-el._c)*parseFloat(el.dataset.parallax);el.style.transform='translate3d(0,'+dd.toFixed(1)+'px,0)';});};
+    var onScrollP=function(){if(!pTick){pTick=true;requestAnimationFrame(render);}};
+    measure();render();
+    addEventListener('scroll',onScrollP,{passive:true});
+    addEventListener('resize',function(){measure();render();});
+  }
+
+  document.querySelectorAll('.email-link').forEach(function(a){var e=a.dataset.u+'\u0040'+a.dataset.d;a.href='mailto:'+e;a.textContent=e;});
+
+  /* ---- Hero trust stats ---------------------------------------------------
+     DOWNLOADS: Apple does NOT publish download counts. Read your real number
+     from App Store Connect and set it here (e.g. 5000) to show "5,000+ downloads".
+     Leave null to hide. Update it whenever you like. */
+  var DOWNLOADS = 126;
+  /* Live App Store rating auto-updates from Apple's public API on each load.
+     Only shown once it has at least this many ratings (lower to 1 to show now). */
+  var RATING_MIN_TO_SHOW = 1;
+  (function(){
+    var _showDl=function(n){ if(n&&n>0){ var dv=document.getElementById('dlVal'),ds=document.getElementById('dlStat');
+      if(dv&&ds){ dv.textContent=Number(n).toLocaleString()+'+'; ds.hidden=false; } } };
+    fetch('stats.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).then(function(s){
+      if(s&&typeof s.downloads==='number'&&s.downloads>0){ _showDl(s.downloads); } else { _showDl(DOWNLOADS); }
+    }).catch(function(){ _showDl(DOWNLOADS); });
+    window.__pwRating=function(data){ try{
+      var r=data&&data.results&&data.results[0];
+      if(r&&r.userRatingCount>=RATING_MIN_TO_SHOW){
+        document.getElementById('ratingVal').textContent=(r.averageUserRating||0).toFixed(1);
+        document.getElementById('ratingCount').textContent='· '+r.userRatingCount.toLocaleString()+(r.userRatingCount===1?' rating':' ratings');
+        document.getElementById('ratingStat').hidden=false;
+      }
+    }catch(e){} };
+    var s=document.createElement('script');
+    s.src='https://itunes.apple.com/ca/lookup?id=6770648419&callback=__pwRating';
+    s.async=true; s.referrerPolicy='no-referrer'; s.onerror=function(){};
+    document.head.appendChild(s);
+  })();
+
+  document.getElementById('year').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
